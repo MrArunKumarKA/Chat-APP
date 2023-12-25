@@ -18,7 +18,7 @@ app.post("/authenticate", async (req, res) => {
             },
             {
                 "headers": {
-                    "private-key": "6f1b21ac-57bf-42e3-95b9-7ee1ce70770a"
+                    "private-key": "replace-private-key"
                 }
             })
             return res.status(r.status).json(r.data)
