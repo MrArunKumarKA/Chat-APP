@@ -6,7 +6,7 @@ import {
 
 const ChatPage = (props) => {
     const chatProps = useMultiChatLogic(
-        'b275cf05-c20b-4ce3-b47d-faaebe35b5b5',
+        'replace-project-id-from-chatengine.io',
         props.user.username,
         props.user.secret
       );
@@ -17,20 +17,5 @@ const ChatPage = (props) => {
         </>
       );
 }
-
-// import { PrettyChatWindow } from 'react-chat-engine-pretty';
-
-// const ChatPage = (props) => {
-//     return (
-//         <div style={{height: '100vh'}}>
-//             <PrettyChatWindow
-//                 projectId="b275cf05-c20b-4ce3-b47d-faaebe35b5b5"
-//                 username={props.user.username}
-//                 secret={props.user.secret}
-//                 style={{ height: '100vh' }}
-//             />
-//         </div>
-//     );
-// }
 
 export default ChatPage
